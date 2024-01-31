@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+html {
+  --main-font: 'Rubik', sans-serif;
+  --bg-colour: rgb(40, 40, 40);
+  --main-colour: rgb(255, 185, 55);
+  --header-shadow: 2px 2px 6px var(--header-shadow-colour);
+  --header-shadow-colour: rgb(30, 30, 30);
+}
+
+// Helper classes
+
+.bold {
+  font-weight: 700;
+}
