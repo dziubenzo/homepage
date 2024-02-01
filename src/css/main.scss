@@ -9,6 +9,10 @@
   font-weight: 400;
 }
 
+img[alt*='Icon'] {
+  filter: var(--icon-colour);
+}
+
 body {
   background: linear-gradient(
     169deg,
@@ -73,6 +77,17 @@ header {
     .about-me-description {
       font-size: 0.9rem;
       line-height: 2;
+    }
+
+    .about-me-icons {
+      display: flex;
+      justify-content: end;
+      gap: 16px;
+      padding: 16px;
+
+      img {
+        width: 28px;
+      }
     }
   }
 }

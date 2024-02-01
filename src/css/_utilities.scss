@@ -6,6 +6,8 @@ html {
   --main-colour: rgb(255, 185, 55);
   --header-shadow: 2px 2px 6px var(--header-shadow-colour);
   --header-shadow-colour: rgb(30, 30, 30);
+  --icon-colour: invert(85%) sepia(27%) saturate(1960%) hue-rotate(329deg)
+    brightness(102%) contrast(101%);
 }
 
 // Helper classes
