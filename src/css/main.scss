@@ -23,8 +23,8 @@ img[alt*='Icon'] {
 body {
   background: linear-gradient(
     169deg,
-    var(--light-bg-colour) 30%,
-    var(--bg-colour) 30% 100%
+    var(--light-bg-colour) 24%,
+    var(--bg-colour) 24% 100%
   );
   color: var(--main-colour);
   display: flex;
@@ -33,11 +33,9 @@ body {
 
 .container {
   max-width: 1000px;
-  // max-height: 100svh;
   display: grid;
   grid-template-columns: auto;
-  // grid-template-rows: 1fr 5fr 1fr;
-  row-gap: 48px;
+  row-gap: 92px;
   padding: 2em;
 }
 
@@ -53,7 +51,7 @@ header {
       img {
         max-width: 100%;
         border-radius: 4px;
-        box-shadow: var(--header-shadow);
+        box-shadow: var(--header-footer-shadow);
       }
 
       .caption {
@@ -75,7 +73,7 @@ header {
     .about-me {
       background-color: var(--bg-colour);
       padding: 1em;
-      box-shadow: var(--header-shadow);
+      box-shadow: var(--header-footer-shadow);
     }
 
     .about-me-title {
@@ -105,11 +103,10 @@ main {
   .projects-title {
     padding: 1em 0;
   }
-
   .projects {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
-    gap: 36px;
+    gap: 48px;
 
     .project-card {
       display: flex;
@@ -141,6 +138,7 @@ main {
             font-size: 1.3rem;
             margin-right: auto;
             padding: 0.5em 0;
+            font-weight: 700;
           }
         }
 
@@ -150,6 +148,65 @@ main {
           color: var(--secondary-colour);
         }
       }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  background-color: var(--light-bg-colour);
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  padding: 2em;
+
+  img[alt*='Icon'] {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(157deg)
+      brightness(104%) contrast(104%);
+    width: 24px;
+  }
+
+  .contact-me {
+    .contact-me-title {
+      padding: 0.5em 0;
+    }
+
+    .contact-me-description {
+      padding-top: 0.5em;
+    }
+
+    .contact-me-address-line-1 {
+      padding-top: 1.5em;
+    }
+
+    .contact-me-address-line-2 {
+      padding-bottom: 1.5em;
+    }
+
+    .phone-line,
+    .email-line {
+      display: flex;
+      gap: 8px;
+    }
+
+    .contact-me-icons {
+      margin-top: 1.5em;
+      display: flex;
+      gap: 16px;
+
+      img {
+        width: 44px;
+      }
+    }
+  }
+
+  .image-footer {
+    max-width: 500px;
+
+    img {
+      max-width: 100%;
+      border-radius: 4px;
+      box-shadow: var(--header-footer-shadow);
     }
   }
 }

@@ -9,6 +9,8 @@ import todoListSrc from '../assets/todo-list.png';
 import ticTacToeSrc from '../assets/tic-tac-toe.png';
 import librarySrc from '../assets/library.png';
 import calculatorSrc from '../assets/calculator.png';
+import phoneIconSrc from '../assets/phone.svg';
+import emailIconSrc from '../assets/email.svg';
 
 function loadImages() {
   const facebookIcons = document.querySelectorAll('img[alt="Facebook Icon"]');
@@ -37,6 +39,10 @@ function loadImages() {
   libraryScreenshot.src = librarySrc;
   const calculatorScreenshot = document.querySelector('img[alt*="Calculator"]');
   calculatorScreenshot.src = calculatorSrc;
+  const phoneIcon = document.querySelector('img[alt="Phone Icon"]');
+  phoneIcon.src = phoneIconSrc;
+  const emailIcon = document.querySelector('img[alt="Email Icon"]');
+  emailIcon.src = emailIconSrc;
 }
 
 loadImages();
