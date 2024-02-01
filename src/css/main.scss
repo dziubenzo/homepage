@@ -10,14 +10,21 @@
 }
 
 img[alt*='Icon'] {
-  filter: var(--icon-colour);
+  filter: invert(85%) sepia(27%) saturate(1960%) hue-rotate(329deg)
+    brightness(102%) contrast(101%);
+}
+
+:focus {
+  outline: 3px solid var(--main-colour);
+  outline-offset: 4px;
+  border-radius: 8px;
 }
 
 body {
   background: linear-gradient(
     169deg,
-    rgb(99, 89, 0) 40%,
-    rgb(40, 40, 40) 40% 100%
+    var(--light-bg-colour) 30%,
+    var(--bg-colour) 30% 100%
   );
   color: var(--main-colour);
   display: flex;
@@ -26,10 +33,11 @@ body {
 
 .container {
   max-width: 1000px;
-  max-height: 100svh;
+  // max-height: 100svh;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 1fr 5fr 1fr;
+  // grid-template-rows: 1fr 5fr 1fr;
+  row-gap: 48px;
   padding: 2em;
 }
 
@@ -75,6 +83,7 @@ header {
     }
 
     .about-me-description {
+      color: var(--secondary-colour);
       font-size: 0.9rem;
       line-height: 2;
     }
@@ -87,6 +96,59 @@ header {
 
       img {
         width: 28px;
+      }
+    }
+  }
+}
+
+main {
+  .projects-title {
+    padding: 1em 0;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    gap: 36px;
+
+    .project-card {
+      display: flex;
+      flex-direction: column;
+      background-color: var(--project-card-bg-colour);
+      box-shadow: var(--card-shadow);
+      border-radius: 8px;
+
+      img[alt*='Screenshot'] {
+        min-width: 275px;
+        object-fit: contain;
+        border-radius: 8px;
+        outline: 1px solid var(--project-card-bg-colour);
+      }
+
+      .project-card-wrapper {
+        padding: 0.75em;
+
+        img[alt*='Icon'] {
+          width: 22px;
+        }
+
+        .project-name-line {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+
+          .project-name {
+            font-size: 1.3rem;
+            margin-right: auto;
+            padding: 0.5em 0;
+          }
+        }
+
+        .project-description {
+          line-height: 1.5;
+          font-size: 0.8rem;
+          color: var(--secondary-colour);
+        }
       }
     }
   }

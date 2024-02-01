@@ -6,5 +6,9 @@
     img[alt*='Icon']:hover {
       animation: breathe 0.6s ease-in infinite alternate;
     }
+    img[alt*='Screenshot']:hover {
+      animation: enlarge 0.2s ease-out forwards 0.3s;
+      z-index: 1;
+    }
   }
 }

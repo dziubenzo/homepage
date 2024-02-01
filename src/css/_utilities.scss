@@ -3,11 +3,13 @@
 html {
   --main-font: 'Rubik', sans-serif;
   --bg-colour: rgb(40, 40, 40);
+  --light-bg-colour: rgb(99, 89, 0);
   --main-colour: rgb(255, 185, 55);
-  --header-shadow: 2px 2px 6px var(--header-shadow-colour);
-  --header-shadow-colour: rgb(30, 30, 30);
-  --icon-colour: invert(85%) sepia(27%) saturate(1960%) hue-rotate(329deg)
-    brightness(102%) contrast(101%);
+  --secondary-colour: rgb(221, 160, 48);
+  --header-shadow: 2px 2px 6px var(--shadow-colour);
+  --shadow-colour: rgb(30, 30, 30);
+  --card-shadow: 2px 2px 15px var(--shadow-colour);
+  --project-card-bg-colour: rgb(49, 49, 49);
 }
 
 // Helper classes
@@ -24,5 +26,13 @@ html {
   }
   to {
     transform: scale(1.3);
+  }
+}
+@keyframes enlarge {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(2);
   }
 }
