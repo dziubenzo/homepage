@@ -30,7 +30,7 @@ body {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 1fr 5fr 1fr;
-  padding: 32px;
+  padding: 2em;
 }
 
 header {
@@ -51,7 +51,7 @@ header {
       .caption {
         position: absolute;
         bottom: 0;
-        padding: 8px;
+        padding: 0.2em;
         font-size: min(3rem, calc(1rem + 3vw));
         width: 100%;
         text-align: center;
@@ -66,12 +66,12 @@ header {
 
     .about-me {
       background-color: var(--bg-colour);
-      padding: 16px;
+      padding: 1em;
       box-shadow: var(--header-shadow);
     }
 
     .about-me-title {
-      padding: 16px 0;
+      padding: 1em 0;
     }
 
     .about-me-description {
@@ -83,7 +83,7 @@ header {
       display: flex;
       justify-content: end;
       gap: 16px;
-      padding: 16px;
+      padding: 1em;
 
       img {
         width: 28px;

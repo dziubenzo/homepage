@@ -15,3 +15,14 @@ html {
 .bold {
   font-weight: 700;
 }
+
+// Animations
+
+@keyframes breathe {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
