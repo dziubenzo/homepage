@@ -9,4 +9,4 @@ My rendition of the Homepage project.
 - Compliance with all design files
 - Animated icons and screenshots
 - Art direction for header and footer images
-- Compressed and resized images for better performance
+- Resized images for better performance
