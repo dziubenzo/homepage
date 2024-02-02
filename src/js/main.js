@@ -54,10 +54,8 @@ function loadImages() {
   const imageHeaderPicture = document.querySelector('header picture');
   const defaultImageHeader = imageHeaderPicture.querySelector('img');
   defaultImageHeader.src = defaultImageHeaderSrc;
-  const tabletImage = imageHeaderPicture.querySelector(
-    'source[media="(min-width: 601px) and (max-width: 1000px)"]',
-  );
-  tabletImage.srcset = tabletImageHeaderSrc;
+  const tabletImage = document.querySelector('.about-me img[alt=""]');
+  tabletImage.src = tabletImageHeaderSrc;
   const mobileImage = imageHeaderPicture.querySelector(
     'source[media="(max-width: 600px)"]',
   );

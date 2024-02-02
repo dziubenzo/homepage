@@ -12,6 +12,10 @@
     }
   }
 
+  /* 
+  Tablet
+  */
+
   @media (width >= 600px) and (width <= 1000px) {
     body {
       background: linear-gradient(
@@ -22,12 +26,14 @@
     }
 
     .container {
-      max-width: 800px;
+      max-width: 1000px;
       row-gap: 32px;
-      padding: 4em;
+      padding: 0;
     }
 
     header {
+      padding-top: 4em;
+
       .image-header {
         display: none;
       }
@@ -62,12 +68,42 @@
       }
     }
 
+    main {
+      .projects-title {
+        padding: 1em 0;
+      }
+      .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+        gap: 32px;
+
+        .project-card {
+          img[alt*='Screenshot'] {
+            min-width: 200px;
+          }
+        }
+      }
+    }
+
     footer {
+      border-radius: 0;
+
       .contact-me {
         padding-right: 1.2em;
       }
     }
+
+    header,
+    main {
+      padding-left: 4em;
+      padding-right: 4em;
+    }
   }
+
+  /* 
+  Mobile
+  */
+
   @media (width < 600px) {
     body {
       background: linear-gradient(
