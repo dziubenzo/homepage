@@ -49,6 +49,7 @@ header {
       position: relative;
 
       img {
+        width: 2000px; // Have no idea why I need this for a smaller image to render full-size...
         max-width: 100%;
         border-radius: 4px;
         box-shadow: var(--header-footer-shadow);
@@ -74,6 +75,14 @@ header {
       background-color: var(--bg-colour);
       padding: 1em;
       box-shadow: var(--header-footer-shadow);
+
+      .caption-tablet {
+        display: none;
+      }
+
+      img[alt=''] {
+        display: none;
+      }
     }
 
     .about-me-title {

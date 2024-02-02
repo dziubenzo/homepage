@@ -11,4 +11,63 @@
       z-index: 1;
     }
   }
+
+  @media (width >= 600px) and (width <= 1000px) {
+    body {
+      background: linear-gradient(
+        169deg,
+        var(--light-bg-colour) 15%,
+        var(--bg-colour) 15% 100%
+      );
+    }
+
+    .container {
+      max-width: 800px;
+      row-gap: 32px;
+      padding: 4em;
+    }
+
+    header {
+      .image-header {
+        display: none;
+      }
+
+      .about-me-wrapper {
+        .caption-tablet {
+          display: block !important;
+          font-size: 3rem;
+          text-align: center;
+          letter-spacing: 5px;
+          transform: translateY(-75px);
+        }
+
+        img[alt=''] {
+          display: block !important;
+          float: left;
+          max-width: 300px;
+          transform: translateX(-60px) translateY(-60px);
+          shape-outside: inset(50px 50px 70px 50px);
+          box-shadow: var(--header-footer-shadow);
+        }
+
+        .about-me-title {
+          transform: translateY(-30px);
+          text-align: center;
+          padding: 0;
+        }
+        .about-me-description {
+        }
+
+        a {
+          width: 28px;
+        }
+      }
+    }
+
+    footer {
+      .contact-me {
+        padding-right: 1.2em;
+      }
+    }
+  }
 }

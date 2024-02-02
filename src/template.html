@@ -10,12 +10,21 @@
       <header>
         <div class="image-header">
           <div class="image-wrapper">
-            <img src="./assets/image-header.jpg" alt="" />
+            <picture>
+              <source srcset="" media="(max-width: 600px)" />
+              <source
+                srcset=""
+                media="(min-width: 601px) and (max-width: 1000px)"
+              />
+              <img src="" alt="" />
+            </picture>
             <p class="caption">My Name</p>
           </div>
         </div>
         <div class="about-me-wrapper">
           <div class="about-me">
+            <img src="./assets/image-header-tablet.jpg" alt="" />
+            <p class="caption-tablet">My Name</p>
             <h1 class="about-me-title">About Me</h1>
             <p class="about-me-description">
               This paragraph should contain some information about me. Lorem
@@ -215,9 +224,7 @@
             Here is how you can get in touch with me. I am looking forward to
             hearing from you!
           </p>
-          <p class="contact-me-address-line-1">
-            Street Name Placeholder 11/7
-          </p>
+          <p class="contact-me-address-line-1">Street Name Placeholder 11/7</p>
           <p class="contact-me-address-line-2">Katowice, Poland, 33-444</p>
           <div class="phone-line">
             <img src="" alt="Phone Icon" />
@@ -245,7 +252,10 @@
           </div>
         </div>
         <div class="image-footer">
-          <img src=".//assets/image-footer.jpg" alt="" />
+          <picture>
+            <source srcset="" media="(max-width: 1000px)" />
+            <img src="" alt="" />
+          </picture>
         </div>
       </footer>
     </div>
